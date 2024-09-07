@@ -1,0 +1,13 @@
+total_grams = (talents * talent_to_pounds * pound_to_lots * lot_to_grams) + \
+              (pounds * pound_to_lots * lot_to_grams) + \
+              (lots * lot_to_grams)
+
+
+kilograms = int(total_grams // 1000)
+remaining_grams = total_grams % 1000
+
+print(f"The total weight is {kilograms} kilograms and {remaining_grams:.2f} grams.")
+
+
+
+average_of_numbers = sum_of_numbers / 3
